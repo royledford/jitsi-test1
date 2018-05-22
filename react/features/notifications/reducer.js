@@ -29,6 +29,7 @@ ReducerRegistry.register('features/notifications',
     (state = DEFAULT_STATE, action) => {
         switch (action.type) {
         case HIDE_NOTIFICATION:
+            debugger
             return {
                 ...state,
                 notifications: state.notifications.filter(

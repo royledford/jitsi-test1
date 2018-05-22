@@ -534,12 +534,12 @@ UI.onPeerVideoTypeChanged
  * @param {boolean} isModerator if local user is moderator or not
  */
 UI.updateLocalRole = isModerator => {
-    VideoLayout.showModeratorIndicator();
+    // VideoLayout.showModeratorIndicator();
 
-    if (isModerator && !interfaceConfig.DISABLE_FOCUS_INDICATOR) {
-        messageHandler.participantNotification(
-            null, 'notify.me', 'connected', 'notify.moderator');
-    }
+    // if (isModerator && !interfaceConfig.DISABLE_FOCUS_INDICATOR) {
+    //     messageHandler.participantNotification(
+    //         null, 'notify.me', 'connected', 'notify.moderator');
+    // }
 };
 
 /**
