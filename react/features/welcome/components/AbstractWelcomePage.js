@@ -177,7 +177,7 @@ export class AbstractWelcomePage extends Component<Props, *> {
                 isGenerated: !this.state.room,
                 room
             }));
-debugger
+
         if (room) {
             this.setState({ joining: true, room: room });
 
@@ -202,7 +202,7 @@ debugger
      * @returns {void}
      */
     _onRoomChange(value: string) {
-        debugger
+
         this.setState({ room: value });
     }
 

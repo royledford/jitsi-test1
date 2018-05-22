@@ -99,7 +99,6 @@ class WelcomePage extends AbstractWelcomePage {
      * @returns {ReactElement|null}
      */
     _onJoinSynz1() {
-        debugger
         // this._onRoomChange('synzi1');
         super._onRoomChange('synzi1');
         this._onJoin('synzi1');

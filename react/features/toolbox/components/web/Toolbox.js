@@ -338,17 +338,17 @@ class Toolbox extends Component<Props> {
                 onMouseOut = { this._onMouseOut }
                 onMouseOver = { this._onMouseOver }>
                 <div className = 'button-group-left'>
-                    { this._shouldShowButton('desktop')
-                        && this._renderDesktopSharingButton() }
-                    { this._shouldShowButton('raisehand')
+                    {/* { this._shouldShowButton('desktop')
+                        && this._renderDesktopSharingButton() } */}
+                    {/* { this._shouldShowButton('raisehand')
                         && <ToolbarButton
                             accessibilityLabel = 'Raised hand'
                             iconName = { _raisedHand
                                 ? 'icon-raised-hand toggled'
                                 : 'icon-raised-hand' }
                             onClick = { this._onToolbarToggleRaiseHand }
-                            tooltip = { t('toolbar.raiseHand') } /> }
-                    { this._shouldShowButton('chat')
+                            tooltip = { t('toolbar.raiseHand') } /> } */}
+                    {/* { this._shouldShowButton('chat')
                         && <div className = 'toolbar-button-with-badge'>
                             <ToolbarButton
                                 accessibilityLabel = 'Chat'
@@ -358,7 +358,7 @@ class Toolbox extends Component<Props> {
                                 onClick = { this._onToolbarToggleChat }
                                 tooltip = { t('toolbar.chat') } />
                             <ChatCounter />
-                        </div> }
+                        </div> } */}
                 </div>
                 <div className = 'button-group-center'>
                     <AudioMuteButton
@@ -369,14 +369,14 @@ class Toolbox extends Component<Props> {
                         visible = { this._shouldShowButton('camera') } />
                 </div>
                 <div className = 'button-group-right'>
-                    { this._shouldShowButton('invite')
+                    {/* { this._shouldShowButton('invite')
                         && !_hideInviteButton
                         && <ToolbarButton
                             accessibilityLabel = 'Invite'
                             iconName = 'icon-add'
                             onClick = { this._onToolbarOpenInvite }
                             tooltip = { t('toolbar.invite') } /> }
-                    { this._shouldShowButton('info') && <InfoDialogButton /> }
+                    { this._shouldShowButton('info') && <InfoDialogButton /> } */}
                     { overflowHasItems
                         && <OverflowMenuButton
                             isOpen = { _overflowMenuVisible }

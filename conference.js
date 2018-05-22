@@ -2539,7 +2539,9 @@ export default {
 
         let requestFeedbackPromise;
 
-        if (requestFeedback) {
+        let synziFeedback = false
+        // if (requestFeedback) {
+        if (synziFeedback) {
             requestFeedbackPromise
                 = APP.store.dispatch(maybeOpenFeedbackDialog(room))
 
