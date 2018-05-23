@@ -6,7 +6,7 @@ import {
     sendAnalytics
 } from '../../react/features/analytics';
 import { parseJWTFromURLParams } from '../../react/features/base/jwt';
-import { invite } from '../../react/features/invite';
+// import { invite } from '../../react/features/invite';
 import { getJitsiMeetTransport } from '../transport';
 
 import { API_ID } from './constants';
@@ -112,25 +112,25 @@ function initCommands() {
         const { name } = request;
 
         switch (name) {
-        case 'invite':
-            APP.store.dispatch(
-                invite(request.invitees))
-                .then(failedInvitees => {
-                    let error;
-                    let result;
+        // case 'invite':
+        //     APP.store.dispatch(
+        //         invite(request.invitees))
+        //         .then(failedInvitees => {
+        //             let error;
+        //             let result;
 
-                    if (failedInvitees.length) {
-                        error = new Error('One or more invites failed!');
-                    } else {
-                        result = true;
-                    }
+        //             if (failedInvitees.length) {
+        //                 error = new Error('One or more invites failed!');
+        //             } else {
+        //                 result = true;
+        //             }
 
-                    callback({
-                        error,
-                        result
-                    });
-                });
-            break;
+        //             callback({
+        //                 error,
+        //                 result
+        //             });
+        //         });
+        //     break;
         case 'is-audio-muted':
             callback(APP.conference.isLocalAudioMuted());
             break;
